@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
-  <script src="https://kit.fontawesome.com/a7f645871e.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Barlow|Cabin|Exo+2|Hind|Montserrat|Muli|Niramit|Noto+Sans|Noto+Sans+TC|Nunito|Open+Sans|Questrial|Quicksand|Ubuntu|Varela+Round|Work+Sans&display=swap" rel="stylesheet">
-  <title name="og:title">My server</title>
-  <link rel="icon" name="og:image" href="https://i.imgur.com/AruQLh4.jpg">
+  <link href="https://fonts.googleapis.com/css?family=Barlow|Cabin|Exo+2|Hind|Montserrat|Muli|Niramit|Noto+Sans|Noto+Sans+TC|Nunito|Open+Sans|Questrial|Quicksand|Ubuntu|Varela+Round|Work+Sans&display=swap" rel="stylesheet"></link>
+  <title style="og:title">my project</title>
+  <link rel="icon" style="og:image" href="https://i.imgur.com/AruQLh4.jpg"></link>
   <style>
     .link {
     text-decoration:none;
@@ -25,8 +24,13 @@
     <p style="font-family:Ubuntu; position:relative; left:45%;top:-140%; font-size:200%; overflow:hidden;width:170px">Brelee2222</p>
     
   </div>
-  <div style="top:100px; left:100px; position: relative; overflow:hidden; width:500px; height:500px;">
-    <iframe src="https://discord.com/widget?id=807113739119755264&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>  
-  </div>
+  <div id="disp"></div>
+  <script>
+    fetch('https://raw.githubusercontent.com/Brelee2222/My-current-projects/main/projects.txt').then(function (res) {
+      return res.text()
+    }).then(function (text) {
+      document.getElementById("disp").innerHTML = text
+    });
+  </script>
   <body style="width:100%; height:0px; background:#222222; overflow:hidden;"></body>
 </html>
