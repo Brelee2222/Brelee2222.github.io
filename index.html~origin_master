@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <link href="https://fonts.googleapis.com/css?family=Barlow|Cabin|Exo+2|Hind|Montserrat|Muli|Niramit|Noto+Sans|Noto+Sans+TC|Nunito|Open+Sans|Questrial|Quicksand|Ubuntu|Varela+Round|Work+Sans&display=swap" rel="stylesheet"></link>
+  <title name="og:title">Brelee's website</title>
+  <link rel="icon" name="og:image" href="https://i.imgur.com/AruQLh4.jpg"></link>
+  <style>
+    .link {
+    text-decoration:none;
+    font-size:200%;
+    color:#DDDDDD;
+    }
+    .link:hover {
+      color:magenta;
+    }
+  </style>
+  <div style="width:100%; height:75px; background:#555555; top: 0%; overflow:hidden;">
+    <nav width="100px" height="200px" style="left:80%;top:45%;position:relative;height:100px">    
+      
+        
+          <a href="" class="link">  Home </a><a href="socials.html" class="link">  Socials </a><a href="server.html" class="link"> Server  </a>
+        
+      
+    </nav>
+    <p style="font-family:Ubuntu; position:relative; left:45%;top:-140%; font-size:200%; overflow:hidden;width:170px">Brelee2222</p>
+    
+  </div>
+  <body id="back">
+    
+    <div id="re">
+      <img src="https://i.imgur.com/6hHdWx5.png" id="e"></img>
+      <img src="https://i.imgur.com/Ea0BFKo.png" id="h"></img>
+      <img src="https://i.imgur.com/PxLNMYX.png" id="j"></img>
+      <img og:image src="https://i.imgur.com/t89dfJI.png" id="l"></img>
+    </div>
+  </body>
+  <div style="width:800px; position:relative;top:250px;">
+    <text style="font-family:Roboto; color:magenta;">Hi! I'm a discord bot dev, website dev, and programmer. I program in Javascript, HTML, C++ and Python. My favorite color is red because kid me seeked revenge, my second favorite color would be magenta. I can speak fluent French, a bit of Chinese and my main is obviously English. My hobbies are messing around with my friends, crashing their computers, exploding their brains, tennis, programming, a tiny bit of parkour here and there, stablelising trades amongst my friends and all of the <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" style="color: blue">typical</a> things a programmer would do.</text>
+  </div>
+  <div id="tp">
+    <p name="og:description" style="color: #FF0000">Top secret over ultra classified files that can only be acessed by the original creator of the website generously funded by the owner.</p>
+  </div>
+  <div id="tpt">
+    Click me to see the page!(Votes reset every month)
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+      <img src="https://top.gg/api/widget/806619458184806450.svg"/>
+    </a>
+  </div>
+  <style>
+  #re {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    background: magenta;
+    top:200px;
+    left:40%;
+    
+
+  }
+  #e {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top:100px;
+    left:0px;
+  }
+  #h {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left:0px;
+  }
+  #j {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 65px;
+    left:0px;
+  }
+  #l {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 15px;
+    left:0px;
+  }
+  #back {
+
+    position: relative;
+    background: #222222;
+
+  }
+  #tp {
+    top: 3000px;
+    left: 0px;
+    position: absolute;
+  }
+  #tpt {
+    top: 6000px;
+    left: 0px;
+    position: absolute;
+  }
+  </style>
+  
+  <body onload="turnhead()"></body>
+  <body onload="rickrolls()"></body>
+  <script>
+
+  
+  setTimeout(function rickroll() {
+        window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
+  }, 15000);
+      
+  
+  window.onkeypress = function() {
+
+      setTimeout(function rickroll() {
+        window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
+      }, 1000);
+      
+    };
+  function rickrolls() {
+    setTimeout(function rickroll() {
+    window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
+    }, 15000);
+  };
+
+  var angle = 0;
+  var angl = 0;
+  var id = null;
+  function turnhead() {
+    var elem = document.getElementById("e");   
+    var pos = 0;
+    clearInterval(id);
+    id = setInterval(frame, 10);
+    function frame() {
+      
+        pos++; 
+        
+        
+        elem.style.transform = 'rotate(' + ((Math.cos(angle)*25) + 45) + 'deg)'; 
+        h.style.transform = 'rotate(' + ((Math.cos(angl)*5)) + 'deg)'; 
+        angl +=0.005
+        angle +=0.01
+        
+      }
+    
+  }
+  
+  </script>
+  <script src="https://kit.fontawesome.com/a7f645871e.js"></script>
+</html>
