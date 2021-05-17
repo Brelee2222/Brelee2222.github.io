@@ -35,11 +35,11 @@
   <div style="top:100px; left:100px; position: relative; overflow:hidden; width:500px; height:500px;">
     
       <div>
-        <div><a href="https://github.com/Brelee2222" target="_blank" ><i class="fab fa-github fa-2x" style="color: #FFFFFF">Github</i></a></div>
-        <div><a href="https://www.instagram.com/brelee2222006/" target="_blank" style="color: blue"><i class="fab fa-instagram fa-2x" style="color: #FF55FF">Instagram</i></a></div>
-        <div><a href="https://discord.gg/QzU45Tuvyz" target="_blank" ><i class="fab fa-discord fa-2x" style="color: #5588FF">Discord</i></a></div>
-        <div><a href="mailto:brelee1842@outlook.com" target="_blank" ><i class="far fa-envelope fa-2x" style="color: #FF1111">Email</i></a></div>
-        <div><a href="https://twitter.com/Brelee2222006" target="_blank" ><i class="fab fa-twitter fa-2x" style="color: #1DA1F2">Twitter</i></a></div>
+        <div><a id="Git" target="_blank" ><i class="fab fa-github fa-2x" style="color: #FFFFFF">Github</i></a></div>
+        <div><a id="Insta" target="_blank" style="color: blue"><i class="fab fa-instagram fa-2x" style="color: #FF55FF">Instagram</i></a></div>
+        <div><a id="Dis" target="_blank" ><i class="fab fa-discord fa-2x" style="color: #5588FF">Discord</i></a></div>
+        <div><a id="Mail" target="_blank" ><i class="far fa-envelope fa-2x" style="color: #FF1111">Email</i></a></div>
+        <div><a id="Twit" target="_blank" ><i class="fab fa-twitter fa-2x" style="color: #1DA1F2">Twitter</i></a></div>
         <p><a href="https://top.gg/user/371303775425200128" target="_blank" style="color: blue; font-size:200%;">Discord bots page</a></p>
         <a href="https://github.com/Brelee2222/website/pulls" target="_blank" style="color: blue; font-size:200%;">Webstite suggestions</a>       
         
@@ -48,4 +48,17 @@
       
   </div>
   <body style="width:100%; height:0px; background:#222222; overflow:hidden;"></body>
+  <script>
+    
+    fetch('/socials.json').then(function (res){
+      return res.json()
+    }).then(function (json) {
+      
+      document.getElementById("Git").href = 'https://github.com/' + json.GitHub
+      document.getElementById("Insta").href = 'https://instagram.com/' + json.Instagram
+      document.getElementById("Dis").href = 'https://discord.gg/' + json.Discord
+      document.getElementById("Mail").href = 'mailto:' + json.Email
+      document.getElementById("Twit").href = 'https://twitter.com/' + json.Twitter
+    })
+  </script
 </html>
