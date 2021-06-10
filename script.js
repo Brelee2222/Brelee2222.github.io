@@ -1,3 +1,4 @@
+0.5+(5^0.5)*0.5
 const KonamiCode = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 var Konamicode = 0
 setTimeout(function rickroll() {
