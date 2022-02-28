@@ -1,0 +1,136 @@
+body {
+    background: linear-gradient(180deg, #3a3a3a 0%, #473547 75%, #472847 100%);
+    margin: 0px;
+}
+
+.TopContainer {
+    text-align: center;
+    padding-top: 65px;
+    height:600px;
+    background-image: url("../Images/Cat.jpg");
+    box-shadow: inset 0 0 0 1000px rgba(70, 70, 70, 1);
+    background-size: 200%;
+    background-position: 50% 0;
+    animation-name: TopContainerAnimation;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.MenuTitle {
+    font-size: 75px;
+    font-family: Roboto;
+    color: #1a1a1a;
+    margin-top: 100px;
+}
+
+.TopBar {
+    top:0px;
+    background: #292528;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 65px;
+    transition: top 0.3s;
+}
+
+.TopBar .noAnimation:hover {
+    background: #3a3a3a;
+}
+
+.TopBar .DiscordLink:hover {
+    background-image: url("../Images/Discord-New-Logo.png");
+    box-shadow: inset 0 0 0 1000px rgba(70, 70, 70, 0.5);
+    background-position: 50% 70%;
+    animation-name: LinkAnimation;
+    animation-duration: 0.3s;
+    animation-timing-function: cubic-bezier(0.0, 0.2, 0.4, 0.8, 1.0);
+    animation-fill-mode: forwards;
+}
+
+.TopBar .GithubLink:hover {
+    background-image: url("../Images/Github.png");
+    box-shadow: inset 0 0 0 1000px rgba(70, 70, 70, 0.7);
+    background-position: 50% 60%;
+    animation-name: LinkAnimation;
+    animation-duration: 0.3s;
+    animation-timing-function: cubic-bezier(0.0, 0.2, 0.4, 0.8, 1.0);
+    animation-fill-mode: forwards;
+}
+
+.TopBar a p {
+    color: aliceblue;
+    font-size: 120%;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin: 0px;
+}
+
+.TopBar a {
+    float: right;
+    text-align: center;
+    height: inherit;
+    padding: 0px 15px;
+    text-decoration: none;
+}
+
+.logo {
+    float: left;
+    overflow: hidden;
+    height: inherit;
+    text-align: center;
+    padding: 0px 25px 0px 50px;
+}
+
+.logo img {
+    position: relative;
+    top:50%;
+    transform: translate(0, -50%);
+}
+
+.ProgrammingLanguages header{
+    position: sticky;
+    top: 65px;
+    width: inherit;
+    background-color: #1a1a1a;
+    z-index: -1;
+}
+
+.ProgrammingLanguages header p{
+    margin: 0;
+    padding: 25px 25px;
+    font-size: 25px;
+    color: white;
+}
+
+.ProgrammingLanguages {
+    height: 100px;
+}
+
+@keyframes LinkAnimation {
+    0% {
+        box-shadow: inset 0 0 0 1000px rgba(70, 70, 70, 1);
+        background-size: calc(100% + 40px);
+        background-position-x: 20%;
+    }
+
+    50% {
+        box-shadow: inset 0 0 0 1000px rgba(70, 70, 70, 0.5);
+    }
+
+    100% {
+        background-size:calc(100% + 50px);
+    }
+}
+
+@keyframes TopContainerAnimation {
+    from {
+        box-shadow: inset 0 0 0 1000px rgba(70, 70, 70, 1);
+    }
+
+    to {
+        box-shadow: inset 0 0 0 1000px rgba(70, 70, 70, 0.7);
+    }
+}
