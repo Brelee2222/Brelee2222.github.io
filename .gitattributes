@@ -1,3 +1,0 @@
-*.ts linguist-language=TypeScript
-* -text
-*.php linguist-language=PHP
