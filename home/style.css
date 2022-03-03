@@ -33,6 +33,14 @@ body {
     width: 100%;
     height: 65px;
     transition: top 0.3s;
+    z-index: 1;
+}
+
+top {
+    font-family:Overclock; 
+    color:magenta;
+    font-size:110%; 
+    text-align:center;
 }
 
 .TopBar .noAnimation:hover {
@@ -90,23 +98,33 @@ body {
     transform: translate(0, -50%);
 }
 
-.ProgrammingLanguages header{
+.AboutMe header{
     position: sticky;
     top: 65px;
     width: inherit;
     background-color: #1a1a1a;
-    z-index: -1;
+    z-index: 0;
 }
 
-.ProgrammingLanguages header p{
+.AboutMe header p{
     margin: 0;
     padding: 25px 25px;
     font-size: 25px;
     color: white;
+    z-index: -1;
 }
 
-.ProgrammingLanguages {
-    height: 100px;
+.AboutMe p {
+    margin: 0;
+    padding: 50px 25px;
+    font-size: 25px;
+    color: white;
+    z-index: -1;
+}
+
+.AboutMe {
+    height: fit-content;
+    background-color: #473547;
 }
 
 @keyframes LinkAnimation {
